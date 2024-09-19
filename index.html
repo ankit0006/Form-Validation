@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Validation Form</h1>
+    <form name="regForm" id="formID" onsubmit="validationCheck()" onload="countryPhoneCodes()"> 
+        <div id="fName">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="Enter your First name"/>
+        </div>
+        <br>
+        <div id="lName">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Enter your Last name"/>
+        </div>
+        <br>
+        <div id="phNo">
+            <label for="phoneNo">Contact Number: </label>
+            <select name="countrySelect" id="countrySelect">
+                <option disabled selected value>Choose a Country</option>
+                <!-- <option value="ind">(+91) India</option>
+                <option value="usa">(+1) United States of America</option>
+                <option value="uk">(+44) United Kingdom</option>
+                <option value="uae">(+971) United Arab Emirates</option>
+                <option value="turkey">(+90) Turkey</option>
+                <option value="swtz">(+41) Switzerland</option>
+                <option value="afghanistan">(+93) Afganishtan</option>
+                <option value="aus">(+61) Australia</option>
+                <option value="cnd">(+1) Canada</option>
+                <option value="brazil">(+55) Brazil</option>
+                <option value="ger">(+49) Germany</option>
+                <option value="hongkong">(+852) Hong Kong</option> -->
+            </select>
+            <input type="number" id="phoneNo" placeholder="(012)-(345)-(6789)"/>
+        </div>
+        <br>
+        <div id="eMail">
+            <label for="emailId">Email ID: </label>
+            <input type="text" id="emailId" placeholder="xyz@example.com">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password" id="pass"/>
+        </div>
+        <br>
+
+        <div>
+            <button>Submit</button>
+        </div>
+
+    </form>
+
+    <script src="index.js"></script>
+    <script src="countriesCode.js"></script>
+</body>
+</html>
